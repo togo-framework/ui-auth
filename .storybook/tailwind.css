@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import "@togo-framework/ui-core/styles.css";
+@source "../src";
+@source "../node_modules/@togo-framework/ui-core/dist";
+
+/* The theme toggle drives background/foreground via design tokens. */
+body {
+  font-family: var(--tg-font);
+}
