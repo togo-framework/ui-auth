@@ -1,36 +1,37 @@
 import { create } from "@storybook/theming/create";
 
-// ToGO brand applied to the Storybook manager UI (sidebar, toolbar, docs chrome).
+// ToGO brand (https://to-go.dev/en/brand) on the Storybook manager: the ink ground,
+// hairline lines, square chrome and the teal action colour — fadymondy.com's grid.
 export default create({
   base: "dark",
   brandTitle: "ToGO UI · Design System",
   brandUrl: "https://to-go.dev",
-  brandImage: "togo-brand-ui.svg?v=1",
+  brandImage: "togo-brand-ui.svg?v=2",
   brandTarget: "_self",
 
-  colorPrimary: "#1FC7DC",
-  colorSecondary: "#2D8CE6",
+  colorPrimary: "#1F8A99",
+  colorSecondary: "#1F8A99",
 
-  appBg: "#07090c",
-  appContentBg: "#0c1014",
-  appPreviewBg: "#0c1014",
-  appBorderColor: "#1d2630",
-  appBorderRadius: 10,
+  appBg: "#0B1429",
+  appContentBg: "#0B1429",
+  appPreviewBg: "#0B1429",
+  appBorderColor: "#25355C",
+  appBorderRadius: 0,
 
-  textColor: "#e8eef2",
-  textInverseColor: "#07090c",
-  textMutedColor: "#8b97a3",
+  textColor: "#F0EBE1",
+  textInverseColor: "#0B1429",
+  textMutedColor: "#8A97B8",
 
-  barBg: "#0c1014",
-  barTextColor: "#8b97a3",
-  barSelectedColor: "#1FC7DC",
-  barHoverColor: "#2D8CE6",
+  barBg: "#0E1A3C",
+  barTextColor: "#8A97B8",
+  barSelectedColor: "#1F8A99",
+  barHoverColor: "#F0EBE1",
 
-  inputBg: "#10151b",
-  inputBorder: "#283442",
-  inputTextColor: "#e8eef2",
-  inputBorderRadius: 8,
+  inputBg: "#0E1A3C",
+  inputBorder: "#25355C",
+  inputTextColor: "#F0EBE1",
+  inputBorderRadius: 6,
 
-  fontBase: '"Sora", "IBM Plex Sans", system-ui, sans-serif',
+  fontBase: '"Lusail", system-ui, sans-serif',
   fontCode: '"JetBrains Mono", monospace',
 });

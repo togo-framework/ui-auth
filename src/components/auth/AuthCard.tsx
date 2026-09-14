@@ -184,15 +184,14 @@ BrandCrest.displayName = 'BrandCrest'
 // ── Brand panel (the "sidebar") ─────────────────────────────────────────────────
 
 const BrandPanel = ({ brand, ar }: { brand: ResolvedBrand; ar: boolean }) => (
-  <div className="relative hidden lg:flex lg:w-1/2 flex-col items-center justify-center overflow-hidden px-12 py-16 bg-gradient-to-br from-[#1FC7DC] via-[#2D8CE6] to-[#1659C8]">
-    {/* Subtle dot-grid texture — keeps the flat solid panel from feeling empty */}
+  <div
+    className="relative hidden lg:flex lg:w-1/2 flex-col items-center justify-center overflow-hidden border-e border-border px-12 py-16"
+    style={{ background: 'var(--togo-ink, #0B1429)', color: 'var(--togo-paper, #F0EBE1)' }}
+  >
+    {/* The grid's hatch on the ink ground — hairline diagonals, never a gradient or glow. */}
     <div
-      className="absolute inset-0 opacity-[0.08]"
-      style={{
-        backgroundImage:
-          'radial-gradient(circle, #ffffff 1px, transparent 1px)',
-        backgroundSize: '24px 24px',
-      }}
+      className="absolute inset-0 opacity-[0.1]"
+      style={{ backgroundImage: 'repeating-linear-gradient(135deg, currentColor 0 1px, transparent 1px 10px)' }}
       aria-hidden="true"
     />
 
